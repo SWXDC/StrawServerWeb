@@ -17,7 +17,7 @@
     
     &::before{
         content: "";
-        background-image: url(./img/主城晚-屋頂.webp);
+        background-image: url(../img/主城晚-屋頂.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -27,7 +27,7 @@
         z-index: -1;
     }
     &.loaded::before {
-        background-image: url(./img/主城晚-屋頂.png); /* 高解析度圖片 */
+        background-image: url(../img/主城晚-屋頂.png); /* 高解析度圖片 */
     }
 }
 .contentInfo {
