@@ -1,0 +1,136 @@
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    a{
+        color: #B0BEC5;
+        position: sticky;
+        bottom: 10px;
+        animation: bounce 1s 2; /* 加入動畫 */
+
+    }
+    .fa-arrow-down{
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    
+    &::before{
+        content: "";
+        background-image: url(./img/主城晚-屋頂.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+    &.loaded::before {
+        background-image: url(./img/主城晚-屋頂.png); /* 高解析度圖片 */
+    }
+}
+.contentInfo {
+    .container-content{
+        .logo{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            height: 256px;
+            border-radius: 64px;
+            margin-right: 25px;
+        }
+        h2{
+            color: #173b6c;
+            font-size: 28px;
+        }
+        ul{
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        li{
+            font-size: 20px;
+        }
+        i{
+            margin: 5px;
+        }
+        a{
+            color: black;
+            text-decoration: underline;
+        }
+        .copyIP-btn {
+            background-color: #FFC300;
+            color: black;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            margin-top: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+
+.mediaInfo{
+    .row{
+        &>div{
+            display: block;
+            height: 150px;
+
+            h2{
+                font-size: 32px;
+                margin-bottom: 25px;
+            }
+            a{
+                text-decoration: none;
+                color: #173b6c;
+                font-size: 22px;
+                transition: color 150ms ease-out;
+    
+                &:hover{
+                    color: #66D022;
+                }
+            }
+            span{
+                text-align: center;
+                background-color: #9fe870;
+                padding: 10px;
+                margin-right: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* 起始和結束位置 */
+    }
+    50% {
+        transform: translateY(-15px); /* 中間位置 */
+    }
+}
+
+@media (max-width:710px) {
+    .mediaInfo{
+        .row{
+            display: block;
+        }
+    }
+}
+@media (max-width:835px) {
+    .contentInfo .row>div{
+        
+        display: block;
+        img{
+            margin: 0px;
+        }
+    }
+}

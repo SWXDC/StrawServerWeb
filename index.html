@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Minecraft, 伺服器, Server, 吸管伺服器, Minecraft伺服器, StrawServer">
+    <meta name="description" content="歡迎來到吸管伺服器,準備好Minecraft開始你的冒險之旅吧!">
+    <link rel="canonical" href="https://www.strawserver.com/" />
+    <!-- og社群媒體分享 -->
+    <meta property="og:image" content="https://www.strawserver.com/img/主城晚-屋頂.png">
+    <meta property="og:url" content="https://www.strawserver.com">
+    <meta property="og:title" content="吸管伺服器 MinecraftServer">
+    <meta property="og:description" content="✨ 吸管伺服器：嗨，你的方塊冒險就差我們了！✨" />
+    <!-- import -->
+    <link rel="stylesheet" href="./css/gloable.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./img/middlePNG.png">
+    <!-- title -->
+    <title>StrawServer | Home</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <img src="./img/middlePNG.png" alt="Logo">
+            <h1>StrawServer</h1>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/rules.html">Rules</a>
+                <div class="dropdown">
+                    <a href="#" class="more-link">More<i class="fa-solid fa-caret-right"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/sponsor.html">贊助</a></li>
+                    </ul>
+                </div>
+                <button onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+        </div>
+        <div class="RWDnavbar" id="RWDnavbar">
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/rules.html">Rules</a>
+                <h2>---More---</h2>
+                <a href="/sponsor.html">贊助</a>
+            </nav>
+        </div>
+    </header>   
+    
+
+
+    <section class="hero" id="hero">
+        <div class="hero-welcomeMessage" id="hero-welcomeMessage">
+
+        </div>
+        <a href="#main"><i class="fa-solid fa-arrow-down"></i></a>
+    </section>
+
+    <main id="main">
+<!--         <section class="service">
+            <div class="container">
+                <div class="container-title">
+                    <h1>服務特色</h1>
+                </div>
+                <div class="container-content">
+                    <div class="row">
+                        <div>1</div>
+                        <div>2</div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="contentInfo" id="contentInfo">
+            <div class="container">
+                <div class="container-title">
+                    <h2>連線資訊</h2>
+                </div>
+                <div class="container-content">
+                    <div class="row">
+                        <div>
+                            <div class="logo"><img src="./img/middlePNG.png" alt=""></div>
+                            <div>
+                                <h2>連線位置<i class="fa-solid fa-link"></i></h2>
+                                <ul>
+                                    <li><i class="fa-solid fa-angle-right"></i><strong>直接連線固定IP:</strong> mc.strawserver.com</li>
+                                    <li><i class="fa-solid fa-angle-right"></i><strong>Java版 Port:</strong>25565 (預設端口不用輸入)</li>
+                                </ul>
+                                <button class="copyIP-btn" onclick="copyIP()">複製IP 開始冒險之旅</button>
+                                <div id="serverIP" style="display: none;">mc.strawserver.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mediaInfo" id="mediaInfo">
+            <div class="container">
+                <div class="container-title">
+                    <h2>社群媒體</h2>
+                </div>
+                <div class="container-content">
+                    <div class="row">
+                        <div>
+                            <h2><span><i class="fa-brands fa-discord"></span></i>Discord</h2>
+                            <a href="https://discord.gg/9U2HdU4ggQ" target="_blank">吸管伺服器</a>
+                        </div>
+                        <div>
+                            <h2><span><i class="fa-brands fa-facebook"></i></span>FaceBook</h2>
+                            <a href="https://facebook.com/StrawServer" target="_blank">StrawServer</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <h2><span><i class="fa-brands fa-youtube"></i></span>YouTube</h2>
+                            <a href="https://www.youtube.com/@吸管伺服器" target="_blank">@StrawServer</a>
+                        </div>
+                        <div>
+                            <h2><span><i class="fa-solid fa-envelope"></i></span>Email</h2>
+                            <a href="mailto:admin@strawserver.com" target="_blank">admin@strawserver.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div>
+            <p>吸管伺服器 開服至今過了<span id="server-survivalTime" class="SST"></span></p>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "StrawServer",
+          "image": "https://www.strawserver.com/img/middlePNG.png",
+          "url": "https://www.strawserver.com/"
+        }
+    </script>
+    <script src="./script/gloable.js"></script>
+    <script src="./script/index.js"></script>
+    <script src="https://kit.fontawesome.com/b9c6197a7b.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
